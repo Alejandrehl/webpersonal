@@ -5,4 +5,10 @@ def home(request):
     return render(request, 'core/home.html')
 
 def about(request):
-    return HttpResponse("<h1>Mi web personal</h1><h2>Acerca de</h2>")
+    return render(request, 'core/about.html')
+
+def contact(request):
+    return render(request, 'core/contact.html')
+
+def portfolio(request):
+    return render(request, 'core/portfolio.html')
